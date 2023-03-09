@@ -49,7 +49,7 @@ print('Top 10 nodes by eigenvector centrality:', top_10_by_eigen_c)
 # 16. [3 points] Find the top 10 nodes as ranked by Pagerank
 page_rank_cs = nx.pagerank(G)
 top_10_by_page_rank = heapq.nlargest(10, page_rank_cs.items(), key=lambda p: p[1])
-print('Top 10 by PageRank', top_10_by_eigen_c)
+print('Top 10 by PageRank', top_10_by_page_rank)
 
 # 17. [3 points] Comment on the differences and similarities in questions 12-16. Are the highly ranked nodes mostly the same? Do you notice significant differences in the rankings? Why do you think this is the case?
 ### TODO
